@@ -1,0 +1,11 @@
+*.tar
+*.img
+*.img.gz
+*.bin
+*.ipk
+*.zip
+*.7z
+backup-*
+build_dir/
+staging_dir/
+tmp/
