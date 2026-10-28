@@ -44,6 +44,13 @@ repository is the note I wish I had found first.
 
 ## Not in here
 
+`bash scripts/check-secrets.sh` is the gate I run before publishing. It fails on IPv4 and MAC
+addresses, credential-sounding keys, phone numbers, e-mail addresses, and any filename that
+looks like a router backup — because a backup of `/etc/config` contains the Wi-Fi key, the admin
+password hash, static leases, and every proxy node in cleartext, and `.gitignore` only protects
+you if you remember it exists.
+
+
 No firmware binaries. No device configuration backups. Nothing from the router itself — no
 addresses, no credentials, no keys. Build it from source or use the vendor's releases.
 
